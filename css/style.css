@@ -1,0 +1,132 @@
+@import(reset.css);
+
+body {
+	background: url(../images/background.png);
+}
+
+section#container {
+	width: 960px;
+	height: auto;
+	margin: 40px auto 0px auto;
+}
+
+section#sidebar {
+	width: 330px;
+	height: auto;
+	float: left;
+}
+
+section#sidebar section#title {
+	font-family: "ChunkFive";
+	text-align: right;
+	-webkit-font-smoothing: antialiased;
+}
+
+section#sidebar section#title h2 {
+	color: #D7D3CF;
+	margin: 10px;
+	font-weight: lighter;
+}
+
+section#sidebar section#title h1 {
+	color: #3D2810;
+	font-size: 5.3em;
+	margin: 0px;
+	font-weight: lighter;
+	text-shadow: 4px 4px 0px rgba(200, 200, 200, 0.6);
+}
+
+section#sidebar section#ribbon {
+	width: 330px;
+	height: auto;
+}
+
+section#sidebar section.ribbon section.bar {
+	width: 300px;
+	height: 35px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background: -webkit-gradient(linear, left top, left bottom, from(#D4D4D4), to(#838383));
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4D4D4, endColorstr=#838383);
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4D4D4, endColorstr=#838383)";
+	background: -moz-linear-gradient(top, #D4D4D4, #838383);
+}
+
+section#sidebar section.ribbon section.left_inner {
+	border-color: transparent #584F4F transparent transparent;
+	border-style: solid;
+	border-width: 15px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	left: 0px;
+	top: -15px;
+	z-index: -1;
+}
+
+section#sidebar section.ribbon section.right_inner {
+	border-color: transparent transparent transparent #584F4F;
+	border-style: solid;
+	border-width: 15px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	left: 300px;
+	top: -44px;
+	z-index: -1;
+}
+
+/* Kinda at a standstill with the cutouts on these ribbons... */
+section#sidebar section.ribbon section.left_outer {	
+}
+
+section#sidebar section.ribbon section.right_outer {
+}
+
+section#content {
+	width: 600px;
+	height: auto;
+	min-height: 200px;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+}
+
+section#content section.topic {
+	width: 270px;
+	height: 160px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 3px rgba(200, 200, 200, 0.2) solid;
+	float: left;
+	-webkit-border-radius: 10px; /* TODO: Make cross browser */
+	background: transparent;
+	overflow: hidden;
+	position: relative;
+}
+
+section#content section.topic img {
+	-webkit-border-radius: 10px;
+	width: inherit;
+	height: inherit;
+	z-index: -1;
+}
+
+section#content section.topic section.info {
+	height: 40px;
+	width: 270px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	position: absolute;
+	bottom: 0px;
+	background: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	color: #FFF;
+	font-family: Helvetica;
+	font-size: 0.9em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	line-height: 40px;
+}
