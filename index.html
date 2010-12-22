@@ -7,6 +7,8 @@
 	<meta name="keywords" content="useful html, useful html5, html5, html tips, html tags, learn html, learn html5" />
 	<meta name="author" content="Nicholas Young">
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/video.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/site.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<section id="container">
@@ -16,32 +18,54 @@
 				<h1>Useful HTML5</h1>
 				<h2>with Nicholas Young</h2>
 			</section>
+			<section id="afterword">
+			</section>
 		</section>
 		<section id="content">
+			<section id="video">
+				<video id="example_video_1" class="video-js" width="640" height="264" controls="controls" preload="auto" poster="http://video-js.zencoder.com/oceans-clip.png">
+					<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+					<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm; codecs="vp8, vorbis"' />
+					<source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg; codecs="theora, vorbis"' />
+		      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+					<object id="flash_fallback_1" class="vjs-flash-fallback" width="640" height="264" type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+						<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+						<param name="allowfullscreen" value="true" />
+						<param name="flashvars" value='config={"playlist":["http://video-js.zencoder.com/oceans-clip.png", {"url": "http://video-js.zencoder.com/oceans-clip.mp4","autoPlay":false,"autoBuffering":true}]}' />
+						<!-- Image Fallback. Typically the same as the poster image. -->
+						<img src="http://video-js.zencoder.com/oceans-clip.png" width="640" height="264" alt="Poster Image" title="No video playback capabilities." />
+					</object>
+				</video>
+			</section>
+			<h2>During the class, you'll learn to...</h2>
 			<section class="topic">
-				<img src="images/html.png">
+				<section id="topic_html" class="topic_img"></section>
 				<section class="info">
 					Write elegant markup
 				</section>
 			</section>
 			<section class="topic">
-				<img src="images/media.png">
+				<section id="topic_media" class="topic_img"></section>
 				<section class="info">
-					Play media without a plugin
+					Play media without Flash
 				</section>
 			</section>
 			<section class="topic">
-				<img src="images/html.png">
-				<section class="info">
-					Build interactive applications
-				</section>
-			</section>
-			<section class="topic">
-				<img src="images/vector.png">
+				<section id="topic_vector" class="topic_img"></section>
 				<section class="info">
 					Render crisp vector graphics
 				</section>
 			</section>
+			<section class="topic">
+				<section id="topic_css" class="topic_img"></section>
+				<section class="info">
+					Create a beautiful layout with CSS
+				</section>
+			</section>
+		</section>
+		<div class="clear"></div>
+		<section id="footer">
+			&copy; 2010 Nicholas Young. All rights reserved.
 		</section>
 	</section>
 </body>

@@ -1,16 +1,25 @@
-@import(reset.css);
+@import url(reset.css);
+@import url(video-js.css);
+
+.clear {
+	clear: both;
+}
 
 body {
 	background: url(../images/background.png);
 }
 
 section#container {
+	position: relative;
 	width: 960px;
 	height: auto;
-	margin: 40px auto 0px auto;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 section#sidebar {
+	position: relative;
 	width: 330px;
 	height: auto;
 	float: left;
@@ -22,9 +31,13 @@ section#sidebar section#title {
 	-webkit-font-smoothing: antialiased;
 }
 
-section#sidebar section#title h2 {
+section#sidebar section#title h2, section#content h2 {
+	-webkit-font-smoothing: antialiased;
 	color: #D7D3CF;
-	margin: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	font-family: "ChunkFive";
 	font-weight: lighter;
 }
 
@@ -87,12 +100,24 @@ section#sidebar section.ribbon section.right_outer {
 }
 
 section#content {
+	position: relative;
 	width: 600px;
 	height: auto;
 	min-height: 200px;
 	margin-left: 30px;
 	margin-top: 10px;
-	float: left;
+	float: right;
+}
+
+section#content section#video {
+	position: relative;
+	width: 567px;
+	margin-bottom: 30px;
+}
+
+video {
+	width: 568px;
+	height: 235px;
 }
 
 section#content section.topic {
@@ -103,16 +128,34 @@ section#content section.topic {
 	border: 3px rgba(200, 200, 200, 0.2) solid;
 	float: left;
 	-webkit-border-radius: 10px; /* TODO: Make cross browser */
+	-moz-border-radius: 10px;
 	background: transparent;
 	overflow: hidden;
 	position: relative;
 }
 
-section#content section.topic img {
+section#content section.topic_img {
 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	width: inherit;
 	height: inherit;
 	z-index: -1;
+}
+
+section#content section#topic_html {
+	background: url(../images/html.png);
+}
+
+section#content section#topic_media {
+	background: url(../images/media.png);
+}
+
+section#content section#topic_css {
+	background: url(../images/css.png);
+}
+
+section#content section#topic_vector {
+	background: url(../images/vector.png);
 }
 
 section#content section.topic section.info {
@@ -120,13 +163,26 @@ section#content section.topic section.info {
 	width: 270px;
 	-webkit-border-bottom-left-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
 	position: absolute;
 	bottom: 0px;
 	background: rgba(0, 0, 0, 0.8);
 	text-align: center;
 	color: #FFF;
 	font-family: Helvetica;
-	font-size: 0.9em;
-	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: 0.85em;
+	font-weight: lighter;
 	line-height: 40px;
+}
+
+section#footer {
+	color: #FFF;
+	font-family: Helvetica;
+	font-size: 0.7em;
+	-webkit-font-smoothing: subpixel-antialiased;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
