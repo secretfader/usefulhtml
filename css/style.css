@@ -6,7 +6,12 @@
 }
 
 body {
-	background: url(../images/background.png);
+	background: #64452A url(../images/background.png);
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
 }
 
 section#container {
@@ -32,13 +37,14 @@ section#sidebar section#title {
 }
 
 section#sidebar section#title h2, section#content h2 {
-	-webkit-font-smoothing: antialiased;
 	color: #D7D3CF;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 1.5em;
 	font-family: "ChunkFive";
-	font-weight: lighter;
+	font-weight: 100;
+	letter-spacing: .5px;
+	-webkit-font-smoothing: antialiased;
 }
 
 section#sidebar section#title h1 {
@@ -49,14 +55,16 @@ section#sidebar section#title h1 {
 	text-shadow: 4px 4px 0px rgba(200, 200, 200, 0.6);
 }
 
-section#sidebar section#ribbon {
+section#sidebar section.ribbon {
 	width: 330px;
 	height: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 section#sidebar section.ribbon section.bar {
-	width: 300px;
-	height: 35px;
+	width: 330px;
+	height: 40px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -66,37 +74,70 @@ section#sidebar section.ribbon section.bar {
 	/* For Internet Explorer 8 */
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#D4D4D4, endColorstr=#838383)";
 	background: -moz-linear-gradient(top, #D4D4D4, #838383);
+	overflow: hidden;
 }
 
-section#sidebar section.ribbon section.left_inner {
-	border-color: transparent #584F4F transparent transparent;
-	border-style: solid;
-	border-width: 15px;
-	height: 0px;
-	width: 0px;
+section#sidebar section.ribbon section.bar section.cutout {
+	background: #64452A url(../images/background.png);
+	height: 40px;
+	width: 40px;
 	position: relative;
-	left: 0px;
-	top: -15px;
-	z-index: -1;
+	top: 0px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
 }
 
-section#sidebar section.ribbon section.right_inner {
-	border-color: transparent transparent transparent #584F4F;
-	border-style: solid;
-	border-width: 15px;
-	height: 0px;
-	width: 0px;
+section#sidebar section.ribbon section.bar section.cutout.left {
+	float: left;
+	left: -20px;
+}
+
+section#sidebar section.ribbon section.bar section.cutout.right {
+	float: right;
+	right: -20px;
+}
+
+section#sidebar section.ribbon section.bar section.title {
+	line-height: 40px;
+	width: 280px;
+	padding-top: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: "Helvetica";
+	font-weight: 100;
+	font-size: 1.0em;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+section#sidebar section.item {
 	position: relative;
-	left: 300px;
-	top: -44px;
-	z-index: -1;
+	clear: both;
+	margin-bottom: 90px;
 }
 
-/* Kinda at a standstill with the cutouts on these ribbons... */
-section#sidebar section.ribbon section.left_outer {	
+section#sidebar section.item section.content {
+	color: #FFF;
+	font-family: "Helvetica";
+	font-weight: 100;
+	font-size: 13px;
+	width: 300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-section#sidebar section.ribbon section.right_outer {
+section#sidebar section.item section.content p {
+	margin-bottom: 15px;
+	line-height: 16px;
+}
+
+section#sidebar section.item section.content img {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: rgba(0, 0, 0, 0.4) 6px solid;
 }
 
 section#content {
@@ -115,7 +156,7 @@ section#content section#video {
 	margin-bottom: 30px;
 }
 
-video {
+section#content section#video video {
 	width: 568px;
 	height: 235px;
 }
@@ -158,6 +199,14 @@ section#content section#topic_vector {
 	background: url(../images/vector.png);
 }
 
+section#content section#topic_fonts {
+	background: url(../images/fonts.png);
+}
+
+section#content section#topic_javascript {
+	background: url(../images/javascript.png);
+}
+
 section#content section.topic section.info {
 	height: 40px;
 	width: 270px;
@@ -185,4 +234,99 @@ section#footer {
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+/* Buttons! */
+button.sign_up {
+  background: #c63929;
+  background: -moz-linear-gradient(0% 100% 90deg, #891100 0%, #B51700 50%, #c63929 50%, #EE432E 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #ee432e), color-stop(0.5, #c63929), color-stop(0.5, #b51700), color-stop(1, #891100));
+  border: 1px solid #951100;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333;
+  color: #fff;
+  font-family: "Helvetica";
+	-webkit-font-smoothing: subpixel-antialiased;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  padding: 12px 0 12px 0;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, .8);
+  width: 100px;
+	margin-top: 10px;
+}
+
+button.sign_up:hover {
+  background: #cb0500;
+  background: -moz-linear-gradient(0% 100% 90deg, #a20601 0%, #cb0500 50%, #db504d 50%, #f37873 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #f37873), color-stop(0.5, #db504d), color-stop(0.5, #cb0500), color-stop(1, #a20601));
+  cursor: pointer;
+}
+
+button.sign_up:active {
+  background: #b30300;
+  background: -moz-linear-gradient(0% 100% 90deg, #700d00 0%, #9c1500 50%, #ad3224 50%, #d43c28 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #d43c28), color-stop(0.5, #ad3224), color-stop(0.5, #9c1500), color-stop(1, #700d00));
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+}
+
+/* Form */
+section#sidebar form#madmimi_signup {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#sidebar form#madmimi_signup label {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+
+section#sidebar form#madmimi_signup input[type=text] {
+  background-color: rgba(0, 0 ,0 , .4);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 13px;
+  padding: 10px;
+  color: #FFF;
+  margin-top: 10px;
+  width: 230px;
+  border-color: transparent transparent rgba(0, 0 ,0 , 1) transparent;
+  border-width: 1px;
+}
+
+section#sidebar form#madmimi_signup input[type=text]:hover {
+  border-color: rgba(0, 0 ,0 , 1) rgba(0, 0 ,0 , 1) rgba(0, 0 ,0 , 1) rgba(0, 0 ,0 , 1);
+}
+
+section#sidebar form#madmimi_signup button {
+	float: right;
+}
+
+/* Messages */
+section#messages {
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	top: 0px;
+	background: rgba(0, 0 ,0 , .7);
+	display: none;
+	z-index: 200;
+}
+
+section#messages section {
+	color: #FFF;
+	text-align: center;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.3em;
+	line-height: 75px;
 }

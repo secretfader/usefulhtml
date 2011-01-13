@@ -7,10 +7,19 @@
 	<meta name="keywords" content="useful html, useful html5, html5, html tips, html tags, learn html, learn html5" />
 	<meta name="author" content="Nicholas Young">
 	<link rel="stylesheet" href="css/style.css" />
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/video.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/site.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+	<section id="messages">
+		<section id="confirm">
+			Thanks for confirming!
+		</section>
+	</section>
 	<section id="container">
 		<section id="sidebar">
 			<section id="title">
@@ -18,7 +27,57 @@
 				<h1>Useful HTML5</h1>
 				<h2>with Nicholas Young</h2>
 			</section>
-			<section id="afterword">
+			<section class="item">
+				<section class="ribbon">
+					<section class="bar">
+						<section class="left cutout"></section>
+						<section class="right cutout"></section>
+						<section class="title">
+							Interested? Sign up.
+						</section>
+					</section>
+				</section>
+				<section class="content">
+					<form id='madmimi_signup' action='http://madmimi.com/signups/subscribe/24119' method='post'>
+						<label for='signup_name'>Name</label>
+						<input id='signup_name' name='signup[name]' type='text' />
+						<label for='signup_email'>Email</label>
+						<input id='signup_email' name='signup[email]' type='text' />
+						<button name="commit" class="sign_up">Sign Up</button>
+					</form>
+				</section>
+			</section>
+			<section class="item">
+				<section class="ribbon">
+					<section class="bar">
+						<section class="left cutout"></section>
+						<section class="right cutout"></section>
+						<section class="title">
+							About the Presenter
+						</section>
+					</section>
+				</section>
+				<section class="content">
+					<img src="images/nicholas.png">
+					<p>
+						Nicholas Young is a seasoned web technologist,
+						speaker, designer, and developer advocate.
+					</p>
+					<p>
+						Over the last six years, he has worked companies,
+						individuals, and musicians - helping each client
+						bring their a-game to the web. Now, he's created
+						a boot-camp for designers.
+					</p>
+					<p>
+						If you're ready to write standards-compliant modern HTML5,
+						clean CSS, and lightning fast JavaScript - this class
+						is for you.
+					</p>
+					<p>
+						<a href="http://nicholaswyoung.com">Learn more about Nicholas. &raquo;</a>
+					</p>
+				</section>
 			</section>
 		</section>
 		<section id="content">
@@ -39,15 +98,27 @@
 			</section>
 			<h2>During the class, you'll learn to...</h2>
 			<section class="topic">
+				<section id="topic_media" class="topic_img"></section>
+				<section class="info">
+					Play media without Flash
+				</section>
+			</section>
+			<section class="topic">
+				<section id="topic_fonts" class="topic_img"></section>
+				<section class="info">
+					Use beautiful fonts (on the web!)
+				</section>
+			</section>
+			<section class="topic">
 				<section id="topic_html" class="topic_img"></section>
 				<section class="info">
 					Write elegant markup
 				</section>
 			</section>
 			<section class="topic">
-				<section id="topic_media" class="topic_img"></section>
+				<section id="topic_css" class="topic_img"></section>
 				<section class="info">
-					Play media without Flash
+					Create a beautiful layout with CSS
 				</section>
 			</section>
 			<section class="topic">
@@ -57,9 +128,9 @@
 				</section>
 			</section>
 			<section class="topic">
-				<section id="topic_css" class="topic_img"></section>
+				<section id="topic_javascript" class="topic_img"></section>
 				<section class="info">
-					Create a beautiful layout with CSS
+					Enhance interaction with JavaScript
 				</section>
 			</section>
 		</section>
