@@ -7,7 +7,9 @@ $(function() {
 		getVars.push(hash[0]);
 		getVars[hash[0]] = hash[1];
 	}
-	if(getVars.action == 'confirm') {
-		$('section#messages').slideDown();
+	if(getVars.action != '') {
+		if($('section#messages section#' + getVars.action).length > 0) {
+			$('section#messages section#' + getVars.action).slideDown();
+		}
 	}
 });
