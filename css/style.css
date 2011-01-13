@@ -31,7 +31,7 @@ section#sidebar {
 }
 
 section#sidebar section#title {
-	font-family: "ChunkFive";
+	font-family: "ChunkFive","chunk-1","chunk-2";
 	text-align: right;
 	-webkit-font-smoothing: antialiased;
 }
@@ -41,14 +41,14 @@ section#sidebar section#title h2, section#content h2, section#sidebar section.it
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-size: 1.5em;
-	font-family: "ChunkFive";
+	font-family: "ChunkFive","chunk-1","chunk-2";
 	font-weight: 100;
 	letter-spacing: .5px;
 	-webkit-font-smoothing: antialiased;
 }
 
 section#sidebar h1 {
-	font-family: "ChunkFive";
+	font-family: "ChunkFive","chunk-1","chunk-2";
 	color: #3D2810;
 	font-size: 5.3em;
 	margin: 0px;
