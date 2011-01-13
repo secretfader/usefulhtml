@@ -47,6 +47,10 @@ section#sidebar section#title h2, section#content h2, section#sidebar section.it
 	-webkit-font-smoothing: antialiased;
 }
 
+section#content h2 {
+	margin-bottom: 20px;
+}
+
 section#sidebar h1 {
 	font-family: "ChunkFive","chunk-1","chunk-2";
 	color: #3D2810;
@@ -59,8 +63,8 @@ section#sidebar h1 {
 section#sidebar section.item h1 {
 	display: inline-block;
 	margin-bottom: 10px;
-/*	width: 100%;
-	text-align: center;*/
+	width: 100%;
+	text-align: center; /* Remove when adding the enroll button */
 }
 
 section#sidebar section.item h2 {
@@ -147,7 +151,7 @@ section#sidebar section.item section.content {
 	margin-right: auto;
 }
 
-section#sidebar section.item section.content p {
+section#sidebar section.item section.content p, section.quote p {
 	margin-bottom: 15px;
 	line-height: 16px;
 }
@@ -242,6 +246,16 @@ section#content section.topic section.info {
 	font-size: 0.85em;
 	font-weight: lighter;
 	line-height: 40px;
+}
+
+section#content section.quote {
+	color: #FFF;
+	font-family: "Helvetica";
+	font-weight: 100;
+	font-size: 13px;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
 }
 
 section#footer {
