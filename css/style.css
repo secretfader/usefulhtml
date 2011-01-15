@@ -355,3 +355,6 @@ section#messages section {
 	font-size: 1.3em;
 	line-height: 75px;
 }
+small {
+	font-size: 10px;
+}
