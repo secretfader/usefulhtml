@@ -12,4 +12,7 @@ $(function() {
 			$('section#messages section#' + getVars.action).slideDown();
 		}
 	}
+	$('button#enroll').click(function() {
+		location.href = "http://usefulhtml.eventbrite.com";
+	});
 });

@@ -61,10 +61,9 @@ section#sidebar h1 {
 }
 
 section#sidebar section.item h1 {
-	display: inline-block;
+	display: inline;
 	margin-bottom: 10px;
 	width: 100%;
-	text-align: center; /* Remove when adding the enroll button */
 }
 
 section#sidebar section.item h2 {
@@ -73,9 +72,11 @@ section#sidebar section.item h2 {
 
 button#enroll {
 	position: relative;
-	top: -17px;
-	left: 20px;
+	top: -19px;
+	left: 10px;
+	margin-bottom: 10px;
 	width: 110px;
+	display: inline-block;
 }
 
 section#sidebar section.ribbon {
@@ -151,9 +152,13 @@ section#sidebar section.item section.content {
 	margin-right: auto;
 }
 
-section#sidebar section.item section.content p, section.quote p {
+p {
 	margin-bottom: 15px;
 	line-height: 16px;
+}
+
+p.center {
+	text-align: center;
 }
 
 section#sidebar section.item section.content img {
